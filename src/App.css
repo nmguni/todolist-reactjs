@@ -1,0 +1,80 @@
+.app {
+  background: #f4f4f4;
+  padding: 30px;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.todo-list {
+  /* background: rgb(160, 160, 236); */
+  /* background: rgb(112, 219, 255); */
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+  background: linear-gradient(132deg, rgb(112, 219, 255), purple);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 15s ease infinite;
+  margin-right: 5%;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.todo {
+  background: #fff;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.2px;
+  padding: 10px 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 3px;
+  padding: 2px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #fff;
+  /* background-color: rgb(142, 142, 209); */
+}
+
+.remove {
+  margin: 2px;
+  /* background-color: rgba(255, 0, 0, 0.8);
+   */
+  background: linear-gradient(132deg, rgb(255, 0, 0), rgba(248, 5, 5, 0.479));
+  background-size: 500% 500%;
+  animation: BackgroundGradient 5s ease infinite;
+}
+
+.complete {
+  background: linear-gradient(132deg, rgb(10, 145, 5), rgba(8, 190, 1, 0.356));
+  background-size: 400% 400%;
+  animation: BackgroundGradient 5s ease infinite;
+}
+
+input {
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  letter-spacing: 1.2px;
+  background: #fff;
+}
